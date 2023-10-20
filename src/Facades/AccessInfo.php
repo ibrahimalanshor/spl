@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibrahimalanshor\Spl\Facade;
+namespace Ibrahimalanshor\Spl\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
