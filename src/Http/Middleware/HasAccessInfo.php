@@ -31,7 +31,7 @@ class HasAccessInfo
         }
 
         try {
-            $payload = JWT::decode($token, new Key(config('auth.secret'), 'HS256'));
+            $payload = JWT::decode($token, new Key(config('spl.secret'), 'HS256'));
 
             AccessInfo::set($payload);
 
