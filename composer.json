@@ -1,0 +1,29 @@
+{
+    "name": "ibrahimalanshor/spl",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Ibrahimalanshor\\Spl\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ibrahimalanshor",
+            "email": "ibrahimalanshor6@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^8.83",
+        "firebase/php-jwt": "^6.9"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ibrahimalanshor\\Spl\\Providers\\SplServiceProvider"
+            ],
+            "aliases": {
+                "AuthInfo": "Ibrahimalanshor\\Spl\\Facades\\AuthInfo"
+            }
+        }
+    }
+}
