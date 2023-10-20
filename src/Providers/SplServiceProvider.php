@@ -35,6 +35,7 @@ class SplServiceProvider extends ServiceProvider {
         $router->aliasMiddleware('has-access-info', \Ibrahimalanshor\Spl\Http\Middleware\HasAccessInfo::class);
         $router->aliasMiddleware('has-permissions', \Ibrahimalanshor\Spl\Http\Middleware\HasPermissions::class);
         $router->aliasMiddleware('has-services', \Ibrahimalanshor\Spl\Http\Middleware\HasServices::class);
+        $router->aliasMiddleware('has-roles', \Ibrahimalanshor\Spl\Http\Middleware\HasRoles::class);
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
