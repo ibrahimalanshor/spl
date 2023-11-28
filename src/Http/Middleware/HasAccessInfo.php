@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use Ibrahimalanshor\Spl\Facades\AccessInfo;
+use Exception;
 
 /**
  * HasAccessInfo
